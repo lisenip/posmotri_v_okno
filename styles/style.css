@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -40,9 +40,9 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: minmax(1px, 717px) minmax(1px, 399px);
+  grid-template-columns: minmax(1px, 715px) minmax(1px, 399px);
   align-items: end;
-  gap: 27px;
+  gap: 31px;
   max-width: 1146px;
   max-height: 534px;
   width: 100%;
@@ -70,12 +70,12 @@ ol {
   width: fit-content;
   display: inline-block;
   padding-left: 2px;
-  display: flex;  
+  display: flex;
   align-items: center;
   flex-shrink: 1;
 }
 
-.search-form__label:hover > .search-form__label-text{
+.search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -86,6 +86,10 @@ ol {
   & {
     padding: 0 1px;
   }
+}
+
+.search-form__label:has(:active) {
+  outline: none;
 }
 
 .search-form__label-text {
@@ -144,7 +148,7 @@ ol {
 }
 
 .search-form__checkbox:active::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -152,12 +156,13 @@ ol {
   background-color: #fff;
 }
 
-.search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox {
+.search-form__checkbox[type="checkbox"]:checked
+  + .search-form__pseudo-checkbox {
   background-color: transparent;
   padding: 1px;
   padding: 0;
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 16px;
     height: 16px;
@@ -181,7 +186,7 @@ ol {
   height: 100%;
   overflow: scroll;
   position: relative;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
   padding: 3px;
 }
@@ -195,7 +200,7 @@ ol {
 }
 
 .result__video-container {
-  max-height: 386px;
+  max-height: 388px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -253,19 +258,20 @@ ol {
   width: 100%;
 }
 
-.content__video-card-description-container:hover, .button:hover {
+.content__video-card-description-container:hover,
+.button:hover {
   text-decoration: underline;
 }
 
 .title {
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
 }
 
-.content__accent{
+.content__accent {
   color: #545050;
 }
 
@@ -275,7 +281,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -310,10 +316,6 @@ ol {
   min-height: 34px;
 }
 
-.button:active {
-  background-color: #545050;
-}
-
 .search-form__submit-button {
   justify-self: end;
   align-self: end;
@@ -329,6 +331,11 @@ ol {
   outline: solid;
   outline-offset: 1px;
   outline-width: 1px;
+}
+
+.button:active {
+  outline: none;
+  background-color: #545050;
 }
 
 .more-button {
