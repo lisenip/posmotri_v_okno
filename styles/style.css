@@ -252,10 +252,6 @@ ol {
   object-fit: contain;
 }
 
-.content__video-card-description-container {
-  width: 100%;
-}
-
 .content__card-link:hover,
 .button:hover {
   text-decoration: underline;
