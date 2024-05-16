@@ -109,12 +109,16 @@ ol {
   cursor: text;
   color: #fff;
   opacity: 0.7;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
 }
 
 .search-form__textfield::placeholder {
   color: #fff;
-  opacity: 0.7;
-  font-family: inherit;
+  opacity: 0.7;   
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 16.5px;
   font-weight: 400;
   line-height: 21.6px;
@@ -228,6 +232,8 @@ ol {
 .content__card-link {
   display: block;
   border: 1px solid transparent;
+  color: #fff;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -239,10 +245,6 @@ ol {
   display: block;
   outline: none;
   border: 1px solid #fff;
-}
-
-.content__card-link:active {
-  border: 1px solid transparent;
 }
 
 .content__video-card-thumbnail {
@@ -267,11 +269,6 @@ ol {
 
 .content__accent {
   color: #545050;
-}
-
-.content__card-link {
-  color: #fff;
-  text-decoration: none;
 }
 
 .content__video-card-title {
