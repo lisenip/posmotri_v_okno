@@ -184,11 +184,9 @@ ol {
   display: grid;
   width: auto;
   margin-top: 17px;
-  max-height: 302px;
-  height: 100%;
-  overflow: scroll;
+  height: 302px;
+  overflow: auto;
   position: relative;
-  scrollbar-width: none;
   padding: 3px;
 }
 
@@ -206,7 +204,6 @@ ol {
 }
 
 .result__video-container {
-  max-height: 388px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -216,6 +213,8 @@ ol {
 }
 
 .result__video {
+  max-height: 388px;
+  object-fit: cover;
   width: 100%;
 }
 
